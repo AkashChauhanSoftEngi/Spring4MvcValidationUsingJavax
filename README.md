@@ -1,10 +1,10 @@
 # Spring4MvcValidationUsingJavax
-* Spring 4 + MVC + Java Configuration + Maven + Validation + Javax, Example
+* Spring 4 + MVC + Java Configuration + Maven + Hibernate Validation + Javax, Example
 
 * Template example for Spring 4 MVC + JSP View with pure Java Configuration (no XML), using Maven build tool.
 * Spring4 + MVC, Integration without using the web.xml and Spring_Servlet.xml file. 
 * By using WebMvcConfigurerAdapter class and WebApplicationInitializer interface to replace above files.
-* Validation using javax
+* Validation using javax and Hibernate-Validation(Email, NotEmply, etc..)
 
 > **###1. Technologies**
 * Spring 4.0.6.RELEASE
