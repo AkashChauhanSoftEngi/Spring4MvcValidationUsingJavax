@@ -18,3 +18,22 @@
 > **###3.  Access** 
 * http://localhost:8080/Spring4MvcValidationAnnotation
 
+> **###4. Important points to remember**
+* Hibernate validator provide many other validations which not present in javax, like
+```java
+	@Email @NotEmpty
+	private String email;
+```
+* When using javax or hibernate validations, it is simple to do validate model classes
+* using @Valid ModelClass obj
+```java
+	@RequestMapping(value = "doSuccess", method = RequestMethod.POST)
+	public String saveRegistration(@Valid Student student, Model model) {}
+```
+* To write instant message if code breaks, use like this[example]
+```java
+	@NotNull(message = "This can not be null")
+	@Size(min=3, max=30,message = "THis can not be null")
+```
+
+
